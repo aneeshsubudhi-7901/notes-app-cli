@@ -60,7 +60,6 @@ argv.command({
     },
   },
   handler(argv) {
-    // console.log("Removing the note");
     notes.removeNote(argv.title);
   },
 });
@@ -70,7 +69,6 @@ argv.command({
   command: "list",
   describe: "List notes",
   handler() {
-    // console.log("List of notes :");
     notes.listNotes();
   },
 });
@@ -87,7 +85,6 @@ argv.command({
     },
   },
   handler(argv) {
-    // console.log("Reading a note");
     notes.readNote(argv.title);
   },
 });
